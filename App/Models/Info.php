@@ -3,10 +3,10 @@
 
     use MF\Model\Model;
 
-    class Produto extends Model{
-        public function getProdutos(){
+    class Info extends Model{
+        public function getInfo(){
             //return $produtos;
-            $query = "select id, descricao, preco from tb_produtos";
+            $query = "select id, titulo, descricao from tb_info";
             return $this->db->query($query)->fetchAll(\PDO::FETCH_ASSOC);
         }
     }

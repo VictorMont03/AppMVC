@@ -1,9 +1,14 @@
-<h1>
+<p>
 
 <?php
-    echo 'chegamos no sobre nós';
+    forEach($this->view->dados as $key => $info){
+        echo $info['titulo'];
+        echo "<br>";
+        echo $info['descricao'];
+        echo "<hr>";
+    }
 ?>
 
 </h1>
 
-<hr>
+<p>
