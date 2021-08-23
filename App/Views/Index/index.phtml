@@ -1,0 +1,18 @@
+<p>
+
+<?php
+    /*echo "<pre>";
+    print_r($this->view->dados);
+    echo "</pre>";*/
+
+    forEach($this->view->dados as $key => $produto){
+        echo $produto['descricao'];
+        echo "<br>";
+        echo $produto['preco'];
+        echo "<hr>";
+    }
+?>
+
+</p>
+
+<hr>
